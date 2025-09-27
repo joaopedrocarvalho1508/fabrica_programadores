@@ -1,0 +1,24 @@
+import pyautogui
+import time
+
+# Define um pequeno tempo de pausa entre os comandos
+pyautogui.PAUSE = 0.5
+
+# 1. Abre a janela "Executar" com Win + R
+pyautogui.hotkey('win', 'r')
+time.sleep(1)
+
+# 2. Digita "calc" e pressiona Enter
+pyautogui.write('calc')
+pyautogui.press('enter')
+
+# 3. Aguarda a calculadora abrir
+time.sleep(2)
+
+# 4. Realiza o cálculo: 8 + 2 =
+pyautogui.press('8')
+pyautogui.press('+')
+pyautogui.press('2')
+pyautogui.press('enter')
+
+# Fim
